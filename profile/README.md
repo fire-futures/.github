@@ -1,104 +1,211 @@
-## Hi there 👋
-
-<!--
-
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
-This README.txt file was generated on YYYY-MM-DD by NAME \<help text is
-included in angle brackets, and can be deleted before saving\>
+This README.txt file was generated on 2023-27-04 by Erica Dale, Victoria Cutler, Mallory Giesie, Lewis White.
 
 **GENERAL INFORMATION**
 
-1\. Title of the Project:
+1\. Title of the Project: Climate Futures for Ecohydrological Modeling of Emerging Fire Regimes in Central Coast California
 
 2\. Author Information 
 
-A. Principal Investigator Contact Information
-Name: Institution: Address: Email:
+A. Principal Investigators Contact Information
+Name: Erica Dale  
+Institution: UCSB  
+Email: ericadale@bren.ucsb.edu
 
-B. Associate or Co-investigator Contact Information Name: Institution:
-Address: Email:
+Name: Victoria Cutler  
+Institution: UCSB  
+Email: victoriacutler@bren.ucsb.edu
+
+Name: Mallory Giesie  
+Institution: UCSB  
+Email:mallorygiesie@bren.ucsb.edu
+
+Name: Lewis White  
+Institution: UCSB  
+Email: lewiswhite@bren.ucsb.edu
+
+
+B. Faculty Advisor Contact Information 
+Name: Naomi Tague  
+Institution: UCSB Tague Lab  
+Email: ctague@bren.ucsb.edu 
 
 C. Alternate Contact Information Name: Institution: Address: Email:
+Not Applicable
 
-3\. Date of data collection or obtaining (single date, range, approximate date)
-\<suggested format YYYY-MM-DD. If multiple data files, list it accordingly\>:
+3\. Date of data collection or obtaining:
 
-4\. Geographic location of data collection: \<latitude, longitude, or
-city/region, State, Country, as appropriate. Again, if multiple data sources, specify accordingly\>:
+This project was developed from 2023-01-01 to 2023-06-09. The original data used for cleaning and organizing the workflow was obtained in January 2023 from CalAdapt.
+
+4\. Geographic location of data collection:
+
+The original data utilized from CalAdapt covers California and some of surrounding states, including Nevada, Arizona, and Oregon. However, user-input data frames into the workflow and final application are not constrained to this geographic range.
 
 5\. Information about funding sources that supported the collection of
 the data:
 
+This project was part of a larger project within the Tague Lab, supported by the Moore Foundation.
+
+
 **SHARING/ACCESS INFORMATION**
 
-1\. Licenses/restrictions placed on the data: 
+1\. Licenses/restrictions placed on the data: Not Applicable
 
-2\. Links to publications that cite or use the data:
+2\. Links to publications that cite or use the data: Not Applicable
 
-3\. Links to other publicly accessible locations of the data:
+3\. Links to other publicly accessible locations of the data: 
 
-4\. Links/relationships to ancillary data sets: \<any supplementary data sources that support analysis or classification of the datasets, eg., plant taxonomy table.)\>
+The original CalAdapt data that the workflow was based off can be found at https://cal-adapt.org/data/download/.
 
-5\. Was data derived from another source? If yes, list
-source(s): \<list citations to original sources\> 
 
-6\. Recommended citation for the project:
+4\. Links/relationships to ancillary data sets: Not Applicable
+
+5\. Was data derived from another source? If yes, list source(s): Not Applicable
+
+6\. Recommended citation for the project: Not Applicable
 
 **DATA & FILE OVERVIEW**
 
-1\. File List: \<list all files (or folders, as appropriate for dataset
-organization) contained in the dataset, with a brief description of their content\>
+1\. File List: 
+
+The current file organization, shown below, is organized into several repositories containing appropriate folders and files. These repositories include data cleaning, workflow of building climate scenarios, the educational visualizations, and the final shiny application.
 
 2\. Relationship between files, if important:
 
-3\. Additional related data collected that was not included in the
-current data package:
+The final repository will have a README folder with important information regarding the project, and user-instructions. For users following the workflow with their own data, the Manual-Workflow folder has the Workflow.Rmd document to walkthrough which sources all of the files in the Functions folder. To use this process, the Workflow file and functions folder must be accessible together. The Automated-App folder contains the build for the interactive online application.
 
-4\. Are there multiple versions of the dataset? \<A. If yes, name
-of file(s) that was updated: i. Why was the file updated? ii. When was
-the file updated?\>
+├── README
+│   ├── abstract
+│   ├── technical documentation
+│   ├── repository descriptions
+│   └── tutorial links
+├── Manual-Workflow
+│   ├── Workflow.Rmd
+│   ├── Functions
+│   │   ├── data_cleaning.R
+│   │   ├── build_runs.R
+│   │   ├── filter_df.R
+│   │   ├── find_df.R
+│   │   ├── find_sample_window.R
+│   │   ├── get_all_grid_cells.R
+│   │   ├── randomly_select.R
+│   │   ├── metadata.R
+│   │   ├── cut_stitch_ts.R
+│   │   ├── packages.R
+│   │   └── season_order.R
+│   └── README.md
+├── Automated-App
+│   ├── README.md
+│   └── shiny-prototype
+│       ├── global.R
+│       ├── server.R
+│       ├── ui.R
+│       ├── text
+│       │   ├── citation.md
+│       │   ├── disclaimer.md
+│       │   └── intro.md
+│       └── www
+│            └── map.jgp
+│
+└── Wildfire-Regime-Visualizations
+│   ├── README.md
+│   └── shiny-prototype
+│       ├── global.R
+│       ├── server.R
+│       ├── ui.R
+│       ├── text
+│       │   ├── citation.md
+│       │   ├── disclaimer.md
+│       │   └── intro.md
+│       └── www
+│            └── visual.jgp
+
+
+3\. Additional related data collected that was not included in the
+current data package: Not Applicable
+
+4\. Are there multiple versions of the dataset?
+
+Multiple grid cells can be selected for this workflow, and must each be entered as their own data frame. One grid cell will need to be selected as the primary cell for selecting a matching criteria list. The resultant series of selected date ranges will then be applied to the rest of the grid cells.
+
 
 **METHODOLOGICAL INFORMATION**
 
 1\. Description of methods used for collection/generation of data:
-\<Include links or references to publications or other documentation
-containing experimental design or protocols used in data collection\>
 
-2\. Methods for processing the data: \<describe how the submitted data
-were generated from the raw or collected data\>
+To create the workflow, CalAdapt Global Climate Models were used. We utilized the 4 priority models within the LOCA Downscaled CMIP5 Climate Projections. Each priority model was downloaded with two emission assumptions, RCP 4.5 and RCP 8.5, thus 8 total models.
 
-3\. Instrument- or software-specific information needed to interpret the
-data: \<include full name and version of software, and any necessary
-packages or libraries needed to run scripts\>
 
-4\. Standards and calibration information, if appropriate:
+2\. Methods for processing the data: 
 
-5\. Environmental/experimental conditions:
+Data acquisition: Within the Shiny Application, the Cal-Adapt API collects the data utilizing user-inputs on model, RCP, and grid cells desired. Otherwise, in the workflow the user will input a dataframe of their own matching the necessary parameters.
+Data cleaning: This process prepares the data frame with steps to match units, such as converting temperature from Kelvin into Celcius.
+Criteria selection: Within the markdown, a user will follow steps to upload their variable criteria for each season or year they would like to build. Alternatively, within the application, a user can explore interactive graphs to see each climate variable distribution, which might prove useful in creating the criteria table.
+Filtering: The list of criteria tables are used to search for matching time periods per table. Each criteria table may have numerous matching time periods, these are all saved as a list of lists.
+Randomly select: For each list of matching time periods, a function randomly selects one and saves in a new list. The result is a series of seasons or years, one per criteria table.
+Cutting and stitching: The final series of time periods is then used. Going in order of the list, each time period is cut from the original data frame and added to a new data frame. 
+Time series: The data frame is converted into time series files beginning with the desired start date followed by the variable measurements. Each variable has its own time series file, with appropriate file extensions.
+Grid cell loop: Each grid cell loops through the cutting, stitching, and time series steps.
 
-6\. Describe any quality-assurance procedures performed on the data:
+The output data will be in a file structure, with folders and files named as the model selected and grid cell:
+- main output folder
+	- metadata.csv
+	- grid_1 time series folder
+		- grid_1_timeseries.csv
+- grid_1_timeseries.rain
+		- grid_1_timeseries.tmax
+		- grid_1_timeseries.tmin
+- grid_1_timeseries.wind
+- grid_1_timeseries.relative_humidity_max 
+- grid_1_timeseries.relative_humidity_min
+- grid_2 time series folder
+		- grid_2_timeseries.csv
+- grid_2_timeseries.rain
+		- grid_2_timeseries.tmax
+		- grid_2_timeseries.tmin
+- grid_2_timeseries.wind
+- grid_2_timeseries.relative_humidity_max 
+- grid_2_timeseries.relative_humidity_min
+
+3\. Instrument- or software-specific information needed to interpret the data:
+
+IDE: R studio 4.2.2
+Programming language: R
+Workflow Packages: {strex} {tidyverse} {lubridate}
+The packages are sourced in packages.R, but may need to be installed prior to use.
+Shiny App Packages: {shiny} {shinydashboard} {tidyverse} {leaflet} {shinycssloaders} {markdown} {fresh} {gridExtra} {zip}
+These packages do not need to be installed for using the interactive online application, but are here as reference to what was used for the process.
+
+4\. Standards and calibration information, if appropriate: Not Applicable
+
+5\. Environmental/experimental conditions: Not Applicable
+
+6\. Describe any quality-assurance procedures performed on the data: 
+
+Checks still planned to be built in.
 
 7\. People involved with sample collection, processing, analysis and/or
-submission:
+Submission: Not Applicable
 
 **DATA-SPECIFIC INFORMATION FOR:** 
 
-\[FILENAME\] \<repeat this section for
-each dataset, folder or file, as appropriate\>
+\[FILENAMES\] CanESM2_rcp45, CanESM2_rcp85, MIROC_rcp45, MIROC_rcp85, CNRM_CM5_rcp45, CNRM_CM5_rcp85, HADGEM2ES_rcp45, HADGEM2ES_rcp85
 
-1\. Number of variables:
+Each of these files contain the same structure as below, while varying with the values for each based on the climate model and assumed rcp.
 
-2\. Number of cases/rows:
+1\. Number of variables: 7
+
+2\. Number of cases/rows: 54784
 
 3\. Variable List: \<list variable name(s), description(s), unit(s)and
 value labels as appropriate for each\>
+time: YYY-MM-DD
+max_temp: in degrees Celsius
+min_temp: in degrees Celsius 
+min_humidity: percent 0-1
+max_humidity: percent 0-1
+wind: meters per second
+precip: kilogram per meter squared per second
 
-4\. Missing data codes: \<list code/symbol and definition\>
+4\. Missing data codes: No missing data
 
-5\. Specialized formats or other abbreviations used:
+5\. Specialized formats or other abbreviations used: Not applicable
