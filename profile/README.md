@@ -29,9 +29,6 @@ Name: Naomi Tague
 Institution: UCSB Tague Lab  
 Email: ctague@bren.ucsb.edu 
 
-C. Alternate Contact Information Name: Institution: Address: Email:
-Not Applicable
-
 3\. Date of data collection or obtaining:
 
 This project was developed from 2023-01-01 to 2023-06-09. The original data used for cleaning and organizing the workflow was obtained in January 2023 from CalAdapt.
@@ -73,52 +70,7 @@ The current file organization, shown below, is organized into several repositori
 
 The final repository will have a README folder with important information regarding the project, and user-instructions. For users following the workflow with their own data, the Manual-Workflow folder has the Workflow.Rmd document to walkthrough which sources all of the files in the Functions folder. To use this process, the Workflow file and functions folder must be accessible together. The Automated-App folder contains the build for the interactive online application.
 
-├── README
-│   ├── abstract
-│   ├── technical documentation
-│   ├── repository descriptions
-│   └── tutorial links
-├── Manual-Workflow
-│   ├── Workflow.Rmd
-│   ├── Functions
-│   │   ├── data_cleaning.R
-│   │   ├── build_runs.R
-│   │   ├── filter_df.R
-│   │   ├── find_df.R
-│   │   ├── find_sample_window.R
-│   │   ├── get_all_grid_cells.R
-│   │   ├── randomly_select.R
-│   │   ├── metadata.R
-│   │   ├── cut_stitch_ts.R
-│   │   ├── packages.R
-│   │   └── season_order.R
-│   └── README.md
-├── Automated-App
-│   ├── README.md
-│   └── shiny-prototype
-│       ├── global.R
-│       ├── server.R
-│       ├── ui.R
-│       ├── text
-│       │   ├── citation.md
-│       │   ├── disclaimer.md
-│       │   └── intro.md
-│       └── www
-│            └── map.jgp
-│
-└── Wildfire-Regime-Visualizations
-│   ├── README.md
-│   └── shiny-prototype
-│       ├── global.R
-│       ├── server.R
-│       ├── ui.R
-│       ├── text
-│       │   ├── citation.md
-│       │   ├── disclaimer.md
-│       │   └── intro.md
-│       └── www
-│            └── visual.jgp
-
+![repoorganization](https://github.com/fire-futures/.github/assets/63022802/5df1cea9-4c44-4f9a-b995-38ac01e4f6ee)
 
 3\. Additional related data collected that was not included in the
 current data package: Not Applicable
