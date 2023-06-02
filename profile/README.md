@@ -70,7 +70,8 @@ The current file organization, shown below, is organized into several repositori
 
 The final repository will have a README folder with important information regarding the project, and user-instructions. For users following the workflow with their own data, the Manual-Workflow folder has the Workflow.Rmd document to walkthrough which sources all of the files in the Functions folder. To use this process, the Workflow file and functions folder must be accessible together. The Automated-App folder contains the build for the interactive online application.
 
-![repoorganization](https://github.com/fire-futures/.github/assets/63022802/5df1cea9-4c44-4f9a-b995-38ac01e4f6ee)
+<img src="https://github.com/fire-futures/.github/assets/63022802/5df1cea9-4c44-4f9a-b995-38ac01e4f6ee" alt="repoorganization" width="400">
+
 
 3\. Additional related data collected that was not included in the
 current data package: Not Applicable
