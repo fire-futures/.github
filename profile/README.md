@@ -35,7 +35,7 @@ This project was developed from 2023-01-01 to 2023-06-09. The original data used
 
 4\. Geographic location of data collection:
 
-The original data utilized from CalAdapt covers California and some of surrounding states, including Nevada, Arizona, and Oregon. However, user-input data frames into the workflow and final application are not constrained to this geographic range.
+The original data utilized from CalAdapt covers California and surrounding states, including Nevada, Arizona, and Oregon. The application is limited to using this data with an API however, user-input data frames into the configurable workflow are not constrained to this geographic range.
 
 5\. Information about funding sources that supported the collection of
 the data:
@@ -149,16 +149,15 @@ Each of these files contain the same structure as below, while varying with the 
 
 2\. Number of cases/rows: 54784
 
-3\. Variable List: \<list variable name(s), description(s), unit(s)and
-value labels as appropriate for each\>
-time: YYY-MM-DD
-max_temp: in degrees Celsius
-min_temp: in degrees Celsius 
-min_humidity: percent 0-1
-max_humidity: percent 0-1
-wind: meters per second
-precip: kilogram per meter squared per second
+3\. Variable List:
+- time: YYY-MM-DD
+- max_temp: in degrees Celsius
+- min_temp: in degrees Celsius 
+- min_humidity: percent 0-1
+- max_humidity: percent 0-1
+- wind: meters per second
+- precip: kilogram per meter squared per second
 
-4\. Missing data codes: No missing data
+4\. Missing data codes: No missing data in the CalAdapt dataset
 
 5\. Specialized formats or other abbreviations used: Not applicable
