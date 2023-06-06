@@ -9,7 +9,7 @@ This workflow allows researchers to input or select from climate model data to c
 
 
 ## Fire Futures Team 
-<img width="115" alt="FireFutures_Logo" src="https://github.com/fire-futures/.github/assets/63022802/4293fdbe-399b-4292-be65-472fe1c55dc9">
+<img width="116" alt="FireFutures_Logo_white" src="https://github.com/fire-futures/.github/assets/63022802/af9f299f-c4a6-430c-9758-4bd2fe03acef">
 
 Name: Victoria Cutler  
 Institution: UCSB  
