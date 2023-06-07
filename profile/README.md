@@ -24,8 +24,7 @@ Institution: UCSB
 Email: lewiswhite@bren.ucsb.edu
 
 
-Faculty Advisor Contact Information 
-Name: Dr. Naomi Tague  
+Faculty Advisor: Dr. Naomi Tague  
 Institution: UCSB Tague Team Lab  
 Email: ctague@bren.ucsb.edu 
 
