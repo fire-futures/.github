@@ -101,7 +101,8 @@ Data must be organized as daily values with the column names and units as:
 
 **SHINY APPLICATION USE DETAILS**
 
-The Automated-App folder contains the build for the interactive online application. This can be run through R-studio by opening the ui file and selecting "run shiny". It will also be deployed via the Tague Team Lab.
+The Automated-App folder contains the build for the interactive online application. This can be run through R-studio by opening the ui file and selecting "run shiny".  It will also be deployed via the Tague Team Lab.
+There are two tabs on this application: The welcome tab has further information on use and a map that can be explored to find CalAdapt grid cell numbers. The build tab provides steps to select and explore the climate model predictions and to build a climate scenario.
 
 
 
