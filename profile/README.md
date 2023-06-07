@@ -1,4 +1,4 @@
-# Automating Climate Scenario Creation for Wildfire Modeling
+# <p align = "center"> Automating Climate Scenario Creation for Wildfire Modeling </p>
 <p align = "center">
 <img src="https://github.com/fire-futures/.github/assets/63022802/1910f415-93f7-4ba6-9e3e-0eba6379c373" alt="Bren Logo" width="100">
 </p>
