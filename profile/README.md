@@ -121,12 +121,7 @@ Shiny App Packages: {shiny} {shinydashboard} {tidyverse} {leaflet} {shinycssload
 These packages do not need to be installed for using the interactive online application, but are here as reference to what was used for the process.
 
 
-
-
-
-This README.txt file was generated on 2023-06-05 by Erica Dale, Victoria Cutler, Mallory Giesie, Lewis White.
-
-MIT License
+## MIT License
 Copyright (c) [2023] [Automating Climate Scenario Creation for Wildfire Modeling]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -146,3 +141,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+This README.txt file was generated on 2023-06-05 by Erica Dale, Victoria Cutler, Mallory Giesie, Lewis White.
