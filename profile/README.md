@@ -39,7 +39,7 @@ The original CalAdapt data that the workflow was based off can be found at https
 
 The current file organization, shown below, is organized into several repositories containing appropriate folders and files. These repositories include data cleaning, workflow of building climate scenarios, educational visualizations, and the final shiny application.
 
-<img src="https://github.com/fire-futures/.github/assets/63022802/527f8ae3-d233-4819-8daa-1cff93c88d12" alt="repo-organization" width="400">
+<img src="https://github.com/fire-futures/.github/assets/63022802/a8efa5aa-7bc6-4c98-8967-6de75922a54d" alt="repo-organization" width="400">
 
 ## Methodology and Use
 
